@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Banco de Reservas</title>
+
+    <style>
+        /* Estilos */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+        }
+
+        /* Encabezado */
+        header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 15px 40px;
+            background-color: white;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+            color: #254C74;
+        }
+
+        /* Menú */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: 0056b3;
+        }
+
+        /* Botón */
+        .btn-login {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #254C74;
+            color: white;
+            cursor: pointer;
+        }
+
+        .btn-login:hover {
+            background-color: #254C74;
+        }
+
+        /* Banner */
+        .banner {
+            text-align: center;
+            padding: 60px 20px;
+            background-color: #254C74;
+            color: white;
+        }
+
+        .banner h1 {
+            font-size: 35px;
+        }
+
+        .banner button {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        /* Servicios */
+        .servicios {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .contenedor-servicios {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .servicio {
+            width: 250px;
+            padding: 25px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 8px #ccc;
+        }
+
+        .servicio button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #254C74;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .servicio button:hover {
+            background-color: #254C74;
+        }
+
+        /* Pie de página */
+        footer {
+            padding: 25px;
+            text-align: center;
+            background-color: #333;
+            color: white;
+        }
+
+        /* Menú principal */
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 25px;
+            margin: 0;
+            padding: 0;
+       }
+
+         nav li {
+            position: relative;
+        }
+
+         nav a {
+         text-decoration: none;
+         color: #333;
+         font-weight: bold;
+        }
+
+           /* Submenu */
+         .submenu {
+         display: none;
+         position: absolute;
+         top: 100%;
+         left: 0;
+         width: 180px;
+         background-color: white;
+         padding: 10px 0;
+         box-shadow: 0 3px 8px #ccc;
+         z-index: 1000;
+        }
+
+
+         .submenu li {
+          width: 100%;
+        }
+
+         .submenu a {
+         display: block;
+         padding: 10px 15px;
+         color: #333;
+        }
+
+         .dropdown:hover .submenu {
+          display: block;
+        }
+
+         /* Efecto al pasar el mouse */
+         .submenu a:hover {
+         background-color: #f0f0f0;
+         color: #006b3f;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Encabezado y menu -->
+    <header>
+
+        <div class="logo">
+            BANRESERVAS
+        </div>
+
+        <nav>
+            <ul>
+
+             <li><a href="#">Inicio</a></li>
+
+              <!-- Menú Productos -->
+              <li class="dropdown">
+              <a href="#">Productos ▼</a>
+
+              <ul class="submenu">
+              <li><a href="#">Cuentas</a></li>
+              <li><a href="#">Tarjetas</a></li>
+              <li><a href="#">Préstamos</a></li>
+            </ul>
+        </li>
+
+        <!-- Menú Servicios -->
+        <li class="dropdown">
+            <a href="#">Servicios ▼</a>
+
+            <ul class="submenu">
+                <li><a href="#">Pagos</a></li>
+                <li><a href="#">Transferencias</a></li>
+                <li><a href="#">Consultas</a></li>
+                <li><a href="#">Banca en línea</a></li>
+            </ul>
+        </li>
+
+        <li><a href="#">Nosotros</a></li>
+        <li><a href="#">Contacto</a></li>
+
+    </ul>
+        </nav>
+
+        <button class="btn-login">
+            Acceso clientes
+        </button>
+
+    </header>
+
+
+    <!-- Banner principal -->
+    <section class="banner">
+
+        <h1>Soluciones para tus necesidades</h1>
+        <h2>Te apoyamos en cada etapa de tu vida.</h2>
+
+        <p> Conoce nuestros productos y servicios.</p>
+        
+        <button>
+            Conoce nuestros servicios
+        </button>
+
+    </section>
+
+
+    <!-- Sección de servicios -->
+    <section class="servicios">
+
+        <h2>Productos y Servicios</h2>
+
+        <div class="contenedor-servicios">
+
+            <div class="servicio">
+                <h3>Cuentas</h3>
+                <p>
+                    Consulta las opciones de cuentas disponibles.
+                </p>
+                <button>Ver mas</button>
+            </div>
+
+            <div class="servicio">
+                <h3>Tarjetas</h3>
+                <p>
+                    Conoce nuestras tarjetas de credito y debito.
+                </p>
+                <button>Ver mas</button>
+            </div>
+
+            <div class="servicio">
+                <h3>Prestamos</h3>
+                <p>
+                    Consulta las opciones de financiamiento.
+                </p>
+                <button>Ver mas</button>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Banco de Reservas
+        </p>
+
+        <p>
+            Contacto | Terminos y condiciones | Privacidad
+        </p>
+
+    </footer>
+
+</body>
+</html>
